@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kasir Sederhana Javascript</title>
+  </head>
+  <body>
+
+
+    <div class="container-fluid mt-5">
+        <h2 class="mb-5 text-center">Kasir total belanja</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="table-responsive">
+                    <table id="myTable" class="table">
+                        <thead>
+                            <tr>
+                                <th>Produk</th>
+                                <th>Nama</th>
+                                <th>Kuantitas</th>
+                                <th>Harga</th>
+                                <th class="text-right"><span id="amount">Amount</span></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="product-img">
+                                        <div class="img-product">
+                                            <img src="./image/ikan.png" alt="ikan">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>Produk Pertama</p>
+                                </td>
+                                <td>
+                                    <div class="button-container">
+                                        <button class="cart-qty-plus" type="button" value="+">+</button>
+                                        <input type="text" name="qty" min="0" class="qty form-control" value="0" />
+                                        <button class="cart-qty-minus" type="button" value="-">-</button>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <input type="text" value="3" class="price form-control" disabled>
+                                </td>
+
+                                <td align="right">Rp <span id="amount" class="amount">0</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="product-img">
+                                        <div class="img-product">
+                                            <img src="./image/minyak.png" alt="ikan">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>Produk Kedua</p>
+                                </td>
+                                <td>
+                                    <div class="button-container">
+                                        <button class="cart-qty-plus" type="button" value="+">+</button>
+                                        <input type="text" name="qty" min="0" class="qty form-control" value="0" />
+                                        <button class="cart-qty-minus" type="button" value="-">-</button>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <input type="text" value="3" class="price form-control" disabled>
+                                </td>
+
+                                <td align="right">Rp <span id="amount" class="amount">0</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="product-img">
+                                        <div class="img-product">
+                                            <img src="./image/ayam.png" alt="ikan">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>Produk Tiga</p>
+                                </td>
+                                <td>
+                                    <div class="button-container">
+                                        <button class="cart-qty-plus" type="button" value="+">+</button>
+                                        <input type="text" name="qty" min="0" class="qty form-control" value="0" />
+                                        <button class="cart-qty-minus" type="button" value="-">-</button>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <input type="text" value="3" class="price form-control" disabled>
+                                </td>
+
+                                <td align="right">Rp <span id="amount" class="amount">0</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="product-img">
+                                        <div class="img-product">
+                                            <img src="./image/pisiang.png" alt="ikan">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>Produk Empat</p>
+                                </td>
+                                <td>
+                                    <div class="button-container">
+                                        <button class="cart-qty-plus" type="button" value="+">+</button>
+                                        <input type="text" name="qty" min="0" class="qty form-control" value="0" />
+                                        <button class="cart-qty-minus" type="button" value="-">-</button>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <input type="text" value="3" class="price form-control" disabled>
+                                </td>
+
+                                <td align="right">Rp <span id="amount" class="amount">0</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="product-img">
+                                        <div class="img-product">
+                                            <img src="./image/apel.png" alt="ikan">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>Produk Lima</p>
+                                </td>
+                                <td>
+                                    <div class="button-container">
+                                        <button class="cart-qty-plus" type="button" value="+">+</button>
+                                        <input type="text" name="qty" min="0" class="qty form-control" value="0" />
+                                        <button class="cart-qty-minus" type="button" value="-">-</button>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <input type="text" value="3" class="price form-control" disabled>
+                                </td>
+
+                                <td align="right">Rp <span id="amount" class="amount">0</span></td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <td colspan="4"></td>
+                                <td align="right">
+                                    <strong>Total = Rp <span id="total" class="total">0</span> </strong>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="js/data.js"></script>
+  </body>
+</html>
